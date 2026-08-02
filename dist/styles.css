@@ -1153,7 +1153,13 @@ html[data-theme="light"] .terminal-panel {
 
 .project-grid-additional {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   margin-top: 20px;
+}
+
+.project-card-compact {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-footer {
@@ -1227,10 +1233,12 @@ html[data-theme="light"] .terminal-panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .project-number span {
   color: var(--muted);
+  text-align: right;
 }
 
 .project-copy h3 {
@@ -1251,16 +1259,27 @@ html[data-theme="light"] .terminal-panel {
 
 .project-card-compact .project-copy {
   display: flex;
-  min-height: 550px;
+  flex: 1;
   flex-direction: column;
 }
 
 .project-card-compact .project-copy h3 {
   font-size: clamp(30px, 3vw, 38px);
+  line-height: 1.08;
 }
 
 .project-card-compact .project-copy > p {
-  min-height: 184px;
+  min-height: 0;
+}
+
+.project-card-compact .project-title-long {
+  font-size: clamp(27px, 2.2vw, 34px);
+  letter-spacing: -0.045em;
+}
+
+.project-actions {
+  margin-top: auto;
+  padding-top: 28px;
 }
 
 .project-proof {
@@ -1449,11 +1468,12 @@ html[data-theme="light"] .health-score {
 .project-link {
   display: inline-flex;
   align-items: center;
-  align-self: flex-start;
+  align-self: stretch;
   justify-content: space-between;
   gap: 16px;
-  min-width: 164px;
-  margin-top: auto;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0;
   padding: 11px 14px;
   border: 1px solid var(--line-strong);
   border-radius: 10px;
@@ -1804,7 +1824,7 @@ html[data-theme="light"] .security-log {
 }
 
 .stack-group {
-  min-height: 360px;
+  min-height: 430px;
   padding: 28px;
   border-right: 1px solid var(--line);
   transition: background 220ms ease;
@@ -1825,11 +1845,19 @@ html[data-theme="light"] .security-log {
 }
 
 .stack-group h3 {
-  margin: 46px 0 24px;
+  margin: 40px 0 12px;
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 500;
   letter-spacing: -0.035em;
+}
+
+.stack-group p {
+  min-height: 66px;
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .stack-group ul {
@@ -1974,6 +2002,29 @@ html[data-theme="light"] .security-log {
   border-bottom: 1px solid var(--line);
 }
 
+.achievement-list a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.achievement-list a strong,
+.achievement-list a span {
+  transition: color 180ms ease;
+}
+
+.achievement-list a:hover strong,
+.achievement-list a:focus-visible strong {
+  color: var(--accent-bright);
+}
+
+.achievement-list a:hover span,
+.achievement-list a:focus-visible span {
+  color: var(--text-soft);
+}
+
 .achievement-list li:last-child {
   border-bottom: 0;
 }
@@ -2017,6 +2068,16 @@ html[data-theme="light"] .security-log {
   border-color: var(--accent-line);
   background: var(--accent-soft);
   transform: translateY(-3px);
+}
+
+.certificate-card[href] {
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.certificate-card[href] .certificate-type {
+  border-color: var(--accent-line);
+  color: var(--accent-bright);
 }
 
 .certificate-mark {
@@ -2389,6 +2450,10 @@ html[data-theme="light"] .security-log {
     border-bottom: 1px solid var(--line);
   }
 
+  .stack-group p {
+    min-height: 0;
+  }
+
   .stack-group:nth-child(2) {
     border-right: 0;
   }
@@ -2435,7 +2500,7 @@ html[data-theme="light"] .security-log {
   }
 
   .project-card-compact .project-link {
-    margin-top: 26px;
+    margin-top: 0;
   }
 
   .project-visual {
@@ -2753,6 +2818,10 @@ html[data-theme="light"] .security-log {
     margin: 26px 0 18px;
   }
 
+  .stack-group p {
+    margin-bottom: 18px;
+  }
+
   .education-card,
   .achievement-card {
     min-height: 0;
@@ -2760,6 +2829,12 @@ html[data-theme="light"] .security-log {
   }
 
   .achievement-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .achievement-list a {
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
