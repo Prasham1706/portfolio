@@ -1,0 +1,12 @@
+{
+  "name": "prasham-doshi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/dev.mjs dist",
+    "check": "node --check script.js && node scripts/check.mjs"
+  }
+}

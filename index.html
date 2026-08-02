@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Prasham Doshi, a software developer building full-stack products, intelligent APIs, and applied AI/ML systems."
+    />
+    <meta name="theme-color" content="#090b0d" />
+    <meta property="og:title" content="Prasham Doshi - Software Developer & AI/ML Builder" />
+    <meta
+      property="og:description"
+      content="Full-stack engineering, agentic AI, and applied machine learning - built end to end."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og.png" />
+    <meta
+      property="og:image:alt"
+      content="Prasham Doshi - Software and AI/ML portfolio"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/og.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prasham Doshi",
+        "jobTitle": "Software Developer and AI/ML Practitioner",
+        "email": "mailto:prasham1706@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rajkot",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN"
+        },
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Pandit Deendayal Energy University"
+        },
+        "sameAs": [
+          "https://github.com/Prasham1706",
+          "https://www.linkedin.com/in/doshiprasham"
+        ],
+        "knowsAbout": ["Full-stack development", "React", "Node.js", "FastAPI", "Machine learning", "Agentic AI"]
+      }
+    </script>
+    <script>
+      (() => {
+        let storedTheme = null;
+        try {
+          storedTheme = localStorage.getItem('prasham-theme');
+        } catch {
+          storedTheme = null;
+        }
+        const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches
+          ? 'light'
+          : 'dark';
+        document.documentElement.dataset.theme = storedTheme || preferredTheme;
+      })();
+    </script>
+    <title>Prasham Doshi - Software Developer & AI/ML Builder</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Prasham Doshi, home">
+          <span class="brand-mark">PD</span>
+          <span class="brand-copy">
+            <strong>Prasham Doshi</strong>
+            <small>Software + AI/ML</small>
+          </span>
+        </a>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#about" data-nav-link><span>01</span>About</a>
+          <a href="#experience" data-nav-link><span>02</span>Experience</a>
+          <a href="#projects" data-nav-link><span>03</span>Projects</a>
+          <a href="#stack" data-nav-link><span>04</span>Stack</a>
+          <a href="#contact" data-nav-link><span>05</span>Contact</a>
+          <a
+            class="mobile-resume-link"
+            href="assets/prasham-doshi-resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          ><span>06</span>Resume ↗</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="resume-button"
+            href="assets/prasham-doshi-resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume <span aria-hidden="true">↗</span>
+          </a>
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+            </svg>
+          </button>
+          <button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <a class="status-pill" href="#contact">
+            <span class="status-dot"></span>
+            Open to software & AI/ML roles
+          </a>
+          <h1 id="hero-title">
+            I build software that
+            <span>thinks, scales,</span>
+            and ships.
+          </h1>
+          <p class="hero-intro">
+            I am Prasham Doshi, a full-stack developer and ML practitioner turning ideas into
+            dependable web products, intelligent APIs, and agentic workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore my work
+              <span class="button-arrow" aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-ghost" href="mailto:prasham1706@gmail.com">
+              Let's talk
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="hero-meta" aria-label="Quick facts">
+            <span>Rajkot, India</span>
+            <span>PDEU '27</span>
+            <span>Available for opportunities</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="A visual map of Prasham's development stack">
+          <div class="system-window">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>prasham.system</span>
+              <span class="window-status"><i></i> online</span>
+            </div>
+            <div class="system-canvas">
+              <div class="system-ring ring-one" aria-hidden="true"></div>
+              <div class="system-ring ring-two" aria-hidden="true"></div>
+              <div class="connector connector-one" aria-hidden="true"></div>
+              <div class="connector connector-two" aria-hidden="true"></div>
+              <div class="connector connector-three" aria-hidden="true"></div>
+              <div class="connector connector-four" aria-hidden="true"></div>
+              <div class="stack-node node-react"><span>R</span>React</div>
+              <div class="stack-node node-node"><span>N</span>Node.js</div>
+              <div class="stack-node node-ai"><span>AI</span>LangGraph</div>
+              <div class="stack-node node-cloud"><span>☁</span>AWS</div>
+              <div class="core-node">
+                <span class="core-label">PD</span>
+                <small>full-stack<br />builder</small>
+              </div>
+              <div class="signal signal-one" aria-hidden="true"></div>
+              <div class="signal signal-two" aria-hidden="true"></div>
+            </div>
+            <div class="terminal-panel">
+              <div><span class="terminal-prompt">›</span> build --from idea --to production</div>
+              <div><span class="terminal-key">status</span>: <b>ready_to_ship</b><i class="terminal-caret"></i></div>
+            </div>
+          </div>
+          <div class="floating-tag">learn → build → improve</div>
+        </div>
+      </section>
+
+      <section class="metrics-rail" aria-label="Selected results">
+        <div class="metrics-track">
+          <div class="metric"><strong>85.3%</strong><span>heart model accuracy</span></div>
+          <div class="metric"><strong>77.78%</strong><span>diabetes model accuracy</span></div>
+          <div class="metric"><strong>65%</strong><span>glucose model accuracy</span></div>
+          <div class="metric"><strong>14</strong><span>API route modules</span></div>
+          <div class="metric"><strong>16</strong><span>data models</span></div>
+          <div class="metric"><strong>8.58</strong><span>CGPA / 10</span></div>
+          <div class="metric" aria-hidden="true"><strong>85.3%</strong><span>heart model accuracy</span></div>
+          <div class="metric" aria-hidden="true"><strong>77.78%</strong><span>diabetes model accuracy</span></div>
+          <div class="metric" aria-hidden="true"><strong>65%</strong><span>glucose model accuracy</span></div>
+          <div class="metric" aria-hidden="true"><strong>14</strong><span>API route modules</span></div>
+          <div class="metric" aria-hidden="true"><strong>16</strong><span>data models</span></div>
+          <div class="metric" aria-hidden="true"><strong>8.58</strong><span>CGPA / 10</span></div>
+        </div>
+        <button class="metrics-toggle" type="button" aria-label="Pause results animation" aria-pressed="false">
+          <span aria-hidden="true">Ⅱ</span>
+        </button>
+      </section>
+
+      <section class="section container" id="about" aria-labelledby="about-heading">
+        <div class="section-heading reveal">
+          <span class="section-kicker"><i></i> 01 / About</span>
+          <h2 id="about-heading">Product-minded engineer.<br />Systems-first builder.</h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-copy reveal">
+            <p class="lead">
+              I enjoy the part where an ambitious idea becomes a clear architecture, a working
+              interface, a tested API, and finally something people can actually use.
+            </p>
+            <p>
+              My work spans the full SDLC: backend and API development, responsive React
+              interfaces, data processing, ML experimentation, testing, debugging, automation,
+              and cloud delivery. I am especially interested in software roles where solid
+              engineering meets practical AI.
+            </p>
+            <a class="text-link" href="#experience">See how I work <span>→</span></a>
+          </div>
+
+          <div class="capability-grid reveal">
+            <article class="capability-card">
+              <span class="card-index">[ web ]</span>
+              <h3>Full-stack products</h3>
+              <p>Responsive React experiences backed by modular Node.js and FastAPI services.</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">[ api ]</span>
+              <h3>Backend systems</h3>
+              <p>REST APIs, RBAC, JWT, WebSockets, relational design, and maintainable modules.</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">[ ai ]</span>
+              <h3>Agentic AI</h3>
+              <p>LangGraph workflows, Gemini structured output, MCP orchestration, and guardrails.</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">[ ml ]</span>
+              <h3>Applied ML</h3>
+              <p>Feature engineering, supervised models, evaluation, and data-driven iteration.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-rule container" aria-hidden="true"></div>
+
+      <section class="section container" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <span class="section-kicker"><i></i> 02 / Experience</span>
+            <h2 id="experience-heading">Where I have<br />built for real.</h2>
+          </div>
+          <p>From requirement discovery to UAT preparation - one complete product cycle.</p>
+        </div>
+
+        <article class="experience-card reveal">
+          <div class="experience-meta">
+            <span>May 2026 - Jul 2026</span>
+            <span>Rajkot, Gujarat</span>
+            <span>Internship · 9 weeks</span>
+          </div>
+          <div class="experience-body">
+            <div class="experience-title">
+              <span class="company-mark">QT</span>
+              <div>
+                <h3>Web Developer Intern</h3>
+                <p>Qublet Technology LLP</p>
+              </div>
+            </div>
+            <ul class="impact-list">
+              <li>
+                Helped take a Loan Management System through the SDLC, translating business
+                requirements for four user roles into clear technical workflows.
+              </li>
+              <li>
+                Designed relational schemas and ER diagrams for users, banks, loan types,
+                customer cases, employees, and channel partners, including RBAC and authentication.
+              </li>
+              <li>
+                Built API-driven financial and case-management modules for sanctions, tenure,
+                interest rates, payouts, insurance validation, payments, and invoices.
+              </li>
+              <li>
+                Defined reporting dashboards and completed functional, unit, validation,
+                security, and integration testing ahead of UAT.
+              </li>
+            </ul>
+            <div class="tag-list" aria-label="Technologies used">
+              <span>Node.js</span><span>MySQL</span><span>REST APIs</span><span>RBAC</span><span>OOP</span><span>Testing</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div class="section-rule container" aria-hidden="true"></div>
+
+      <section class="section projects-section container" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <span class="section-kicker"><i></i> 03 / Selected builds</span>
+            <h2 id="projects-heading">Useful systems,<br />measurable outcomes.</h2>
+          </div>
+          <p>Five builds spanning full-stack product engineering, secure APIs, and practical AI.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured reveal" data-tilt>
+            <div class="project-visual health-visual" aria-hidden="true">
+              <div class="visual-toolbar">
+                <span>HLTH / 01</span>
+                <span class="live-badge"><i></i> monitoring</span>
+              </div>
+              <div class="health-dashboard">
+                <div class="health-panel health-chart">
+                  <span>risk signal</span>
+                  <svg viewBox="0 0 560 150" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="pulse-fill" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="currentColor" stop-opacity=".28" />
+                        <stop offset="100%" stop-color="currentColor" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                    <path class="pulse-area" d="M0,105 L45,102 L85,98 L115,100 L140,96 L168,99 L190,91 L208,97 L223,92 L240,30 L258,125 L276,84 L294,98 L330,95 L365,92 L404,96 L442,88 L476,91 L515,84 L560,88 L560,150 L0,150 Z" />
+                    <path class="pulse-line" d="M0,105 L45,102 L85,98 L115,100 L140,96 L168,99 L190,91 L208,97 L223,92 L240,30 L258,125 L276,84 L294,98 L330,95 L365,92 L404,96 L442,88 L476,91 L515,84 L560,88" />
+                  </svg>
+                </div>
+                <div class="health-score-row">
+                  <div class="health-score"><small>Heart</small><strong>85.3%</strong><span>accuracy</span></div>
+                  <div class="health-score"><small>Diabetes</small><strong>77.78%</strong><span>accuracy</span></div>
+                  <div class="health-score"><small>Glucose</small><strong>65%</strong><span>accuracy</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-number">PRJ-01 <span>AI health platform</span></div>
+              <h3>HealthTrack AI</h3>
+              <p>
+                An AI-powered health risk and monitoring platform with role-based Patient,
+                Doctor, and Hospital experiences, predictive models reaching 85.3% heart-disease,
+                77.78% diabetes, and 65% glucose accuracy, plus scheduled agentic summaries.
+              </p>
+              <ul class="project-proof">
+                <li><strong>14</strong> route modules</li>
+                <li><strong>16</strong> Mongoose models</li>
+                <li><strong>3</strong> role dashboards</li>
+              </ul>
+              <div class="tag-list">
+                <span>React</span><span>Node.js</span><span>FastAPI</span><span>MongoDB</span><span>LangGraph</span><span>Gemini</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-visual flow-visual" aria-hidden="true">
+              <div class="visual-toolbar">
+                <span>FLOW / 02</span>
+                <span class="live-badge"><i></i> agent ready</span>
+              </div>
+              <div class="flow-canvas">
+                <svg class="flow-lines" viewBox="0 0 600 300" preserveAspectRatio="none">
+                  <path d="M95 150 C160 150, 155 76, 228 76" />
+                  <path d="M95 150 C160 150, 155 224, 228 224" />
+                  <path d="M318 76 C380 76, 370 150, 432 150" />
+                  <path d="M318 224 C380 224, 370 150, 432 150" />
+                  <path d="M500 150 L565 150" />
+                </svg>
+                <div class="flow-node flow-start"><i>01</i><strong>Prompt</strong><small>natural language</small></div>
+                <div class="flow-node flow-plan"><i>02</i><strong>Planner</strong><small>Gemini 1.5</small></div>
+                <div class="flow-node flow-risk"><i>03</i><strong>Risk gate</strong><small>ML scoring</small></div>
+                <div class="flow-node flow-run"><i>04</i><strong>Execute</strong><small>self-healing</small></div>
+                <div class="flow-node flow-done"><span>✓</span></div>
+                <div class="flow-packet"></div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-number">PRJ-02 <span>agentic automation</span></div>
+              <h3>FlowMind</h3>
+              <p>
+                A workflow platform that converts natural-language instructions into executable
+                DAGs, checks execution risk, and recovers from failures through an agentic loop.
+              </p>
+              <ul class="project-proof">
+                <li><strong>DAG</strong> execution engine</li>
+                <li><strong>MCP</strong> app orchestration</li>
+                <li><strong>AWS</strong> EC2 deployment</li>
+              </ul>
+              <div class="tag-list">
+                <span>React</span><span>FastAPI</span><span>Node.js</span><span>MongoDB</span><span>Gemini 1.5</span><span>AWS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-grid project-grid-additional">
+          <article class="project-card project-card-compact reveal" data-tilt>
+            <div class="project-visual compact-visual subsidy-visual" aria-hidden="true">
+              <div class="visual-toolbar">
+                <span>HACK / 03</span>
+                <span class="live-badge"><i></i> lifecycle mapped</span>
+              </div>
+              <div class="subsidy-canvas">
+                <div class="visual-summary">
+                  <small>Green hydrogen subsidy</small>
+                  <strong>From application to accountable release.</strong>
+                </div>
+                <div class="subsidy-flow">
+                  <div class="subsidy-stage is-active"><i>01</i><strong>Apply</strong><small>company portal</small></div>
+                  <div class="subsidy-stage"><i>02</i><strong>Verify</strong><small>government review</small></div>
+                  <div class="subsidy-stage"><i>03</i><strong>Milestone</strong><small>production proof</small></div>
+                  <div class="subsidy-stage"><i>04</i><strong>Release</strong><small>fund tracking</small></div>
+                </div>
+                <div class="visual-status-row">
+                  <span>Audit exports</span><span>Analytics</span><span>Public view</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-number">PRJ-03 <span>civic-tech platform</span></div>
+              <h3>HackOps</h3>
+              <p>
+                A dual-role green-hydrogen subsidy prototype connecting company applications,
+                government review, milestone tracking, fund disbursement, audit exports, and
+                public reporting in one workflow.
+              </p>
+              <ul class="project-proof">
+                <li><strong>2</strong> role portals</li>
+                <li><strong>CSV</strong> audit exports</li>
+                <li><strong>Live</strong> reporting views</li>
+              </ul>
+              <div class="tag-list">
+                <span>React</span><span>TypeScript</span><span>Express</span><span>Tailwind</span><span>Recharts</span>
+              </div>
+              <a class="project-link" href="https://github.com/Prasham1706/HackOps_HACKOUT" target="_blank" rel="noreferrer" aria-label="View HackOps repository on GitHub">
+                View repository <span aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact reveal" data-tilt>
+            <div class="project-visual compact-visual talent-visual" aria-hidden="true">
+              <div class="visual-toolbar">
+                <span>TALENT / 04</span>
+                <span class="live-badge"><i></i> session secure</span>
+              </div>
+              <div class="talent-canvas">
+                <div class="talent-profile">
+                  <span class="talent-avatar">TA</span>
+                  <div><strong>Candidate session</strong><small>local + Google authentication</small></div>
+                  <span class="secure-pill">verified</span>
+                </div>
+                <div class="security-grid">
+                  <div><small>Access</small><strong>Short-lived JWT</strong></div>
+                  <div><small>Session</small><strong>Token rotation</strong></div>
+                  <div><small>Roles</small><strong>RBAC gates</strong></div>
+                  <div><small>Events</small><strong>Audit trail</strong></div>
+                </div>
+                <div class="security-log"><i></i><span>csrf check passed</span><b>200 OK</b></div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-number">PRJ-04 <span>secure AI foundation</span></div>
+              <h3>TalentAI</h3>
+              <p>
+                A production-minded foundation for an AI talent-acquisition product with local
+                and Google sign-in, short-lived access tokens, refresh-token rotation, RBAC,
+                CSRF protection, structured errors, and audit logging.
+              </p>
+              <ul class="project-proof">
+                <li><strong>JWT</strong> secure sessions</li>
+                <li><strong>3</strong> user roles</li>
+                <li><strong>Audit</strong> event logging</li>
+              </ul>
+              <div class="tag-list">
+                <span>React</span><span>Express</span><span>MongoDB</span><span>Firebase</span><span>Joi</span><span>JWT</span>
+              </div>
+              <a class="project-link" href="https://github.com/Prasham1706/Ai_interview-agent" target="_blank" rel="noreferrer" aria-label="View TalentAI repository on GitHub">
+                View repository <span aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact reveal" data-tilt>
+            <div class="project-visual compact-visual maintenance-visual" aria-hidden="true">
+              <div class="visual-toolbar">
+                <span>CMMS / 05</span>
+                <span class="live-badge"><i></i> operations ready</span>
+              </div>
+              <div class="maintenance-canvas">
+                <div class="visual-summary">
+                  <small>Maintenance command center</small>
+                  <strong>Equipment work, visible at a glance.</strong>
+                </div>
+                <div class="kanban-board">
+                  <section><header>New <b>02</b></header><div><i class="priority-high"></i>Pump inspection</div><div><i></i>Filter check</div></section>
+                  <section><header>In progress <b>01</b></header><div><i class="priority-medium"></i>HVAC service</div></section>
+                  <section><header>Repaired <b>02</b></header><div><i class="priority-done"></i>Belt repair</div><div><i class="priority-done"></i>Safety review</div></section>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-number">PRJ-05 <span>maintenance operations</span></div>
+              <h3>GearGuard</h3>
+              <p>
+                A full-stack CMMS for equipment registries, maintenance request boards,
+                preventive calendars, technician assignments, team workloads, and operational
+                dashboards backed by a protected .NET API.
+              </p>
+              <ul class="project-proof">
+                <li><strong>.NET 8</strong> Web API</li>
+                <li><strong>JWT</strong> protected routes</li>
+                <li><strong>CRUD</strong> core workflows</li>
+              </ul>
+              <div class="tag-list">
+                <span>React 19</span><span>ASP.NET Core</span><span>SQL Server</span><span>EF Core</span><span>Recharts</span>
+              </div>
+              <a class="project-link" href="https://github.com/Prasham1706/odoo_4" target="_blank" rel="noreferrer" aria-label="View GearGuard repository on GitHub">
+                View repository <span aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="project-footer reveal">
+          <p>More code, experiments, and works in progress live on my GitHub profile.</p>
+          <a href="https://github.com/Prasham1706" target="_blank" rel="noreferrer">
+            Browse GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="section-rule container" aria-hidden="true"></div>
+
+      <section class="section stack-section container" id="stack" aria-labelledby="stack-heading">
+        <div class="section-heading reveal">
+          <span class="section-kicker"><i></i> 04 / Toolkit</span>
+          <h2 id="stack-heading">The stack I reach for.</h2>
+        </div>
+        <div class="stack-layout reveal">
+          <div class="stack-group">
+            <span>01</span>
+            <h3>Languages</h3>
+            <ul><li>C</li><li>C++</li><li>Python</li><li>SQL</li><li>JavaScript ES6+</li></ul>
+          </div>
+          <div class="stack-group">
+            <span>02</span>
+            <h3>Web & APIs</h3>
+            <ul><li>React.js</li><li>Vite</li><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>REST</li><li>WebSockets</li></ul>
+          </div>
+          <div class="stack-group">
+            <span>03</span>
+            <h3>AI / ML</h3>
+            <ul><li>LangGraph</li><li>LangChain</li><li>scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Feature Engineering</li></ul>
+          </div>
+          <div class="stack-group">
+            <span>04</span>
+            <h3>Data & Cloud</h3>
+            <ul><li>MySQL</li><li>MongoDB</li><li>AWS EC2</li><li>Git</li><li>Postman</li><li>Jupyter</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials-section" aria-labelledby="credentials-heading">
+        <div class="container credentials-heading reveal">
+          <span class="section-kicker"><i></i> Education &amp; credentials</span>
+          <h2 id="credentials-heading">Learning backed by<br />visible progress.</h2>
+          <p>Education, competitive milestones, and focused programs that support the work above.</p>
+        </div>
+        <div class="container credentials-grid">
+          <article class="education-card reveal">
+            <span class="section-kicker"><i></i> Education</span>
+            <div class="education-score">
+              <strong>8.58</strong><span>/ 10 CGPA</span>
+            </div>
+            <h3>Pandit Deendayal Energy University</h3>
+            <p>B.Tech in Information and Communication Technology</p>
+            <div class="education-meta"><span>2023 - 2027</span><span>Through 6th semester</span></div>
+          </article>
+
+          <article class="achievement-card reveal">
+            <span class="section-kicker"><i></i> Proof of progress</span>
+            <ul class="achievement-list">
+              <li><strong>Amazon ML Summer School</strong><span>Selected participant</span></li>
+              <li><strong>GATE 2026</strong><span>AIR 8659 · Score 41.44</span></li>
+              <li><strong>Cloud Knight Hackathon</strong><span>2nd runner-up</span></li>
+              <li><strong>HackOut '25</strong><span>Top 15 teams · DA-IICT</span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="container certification-grid reveal" aria-label="Certifications and programs">
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">JP</span>
+            <div><small>JPMorgan Chase</small><strong>Software Engineering</strong></div>
+            <span class="certificate-type">Certificate</span>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">ML</span>
+            <div><small>MATLAB</small><strong>Machine Learning</strong></div>
+            <span class="certificate-type">Certificate</span>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">SP</span>
+            <div><small>MATLAB</small><strong>Signal Processing</strong></div>
+            <span class="certificate-type">Certificate</span>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">C</span>
+            <div><small>Programming foundations</small><strong>C Programming</strong></div>
+            <span class="certificate-type">Certificate</span>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">T3</span>
+            <div><small>Season 3</small><strong>Teliport Program</strong></div>
+            <span class="certificate-type">Program</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="container contact-inner reveal">
+          <span class="section-kicker light"><i></i> 05 / Contact</span>
+          <h2 id="contact-heading">Have a role, a problem,<br />or a bold idea?</h2>
+          <p>I'm always happy to talk about software, AI/ML, and useful things worth building.</p>
+          <a class="contact-email" href="mailto:prasham1706@gmail.com">
+            prasham1706@gmail.com <span aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-actions">
+            <a href="mailto:prasham1706@gmail.com">Email me</a>
+            <a href="tel:+919313433506">Call</a>
+            <a href="https://github.com/Prasham1706" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/doshiprasham" target="_blank" rel="noreferrer">LinkedIn</a>
+            <button type="button" data-copy-email>Copy email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> Prasham Doshi · Rajkot, Gujarat, India</p>
+        <p>Designed with intent. Built from scratch.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>Email copied</div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
